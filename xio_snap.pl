@@ -36,8 +36,8 @@ use warnings;
 my $verbose=0;
 
 #my $username="admin";
-#my $password="Xtrem10";
-#my $xms="172.20.166.29";
+#my $password="Password";
+#my $xms="999.99.999.99";
 
 my $username;
 my $password;
@@ -146,7 +146,7 @@ $_WORKGRP =~ tr/a-z/A-Z/;
 my $FROMCONSID = $_WORKGRP;
 my $TOCONSID = "SnapshotSet." . $_WORKGRP;
 my $SNAPSUFFIX = ".snapshot." . $_WORKGRP;
-my $BACKUPIG = "LINUX_boise80_IG";
+my $BACKUPIG = "BACKUP_HOST_IG";
 
 my $client = REST::Client->new();
 my $headers = {Authorization => "Basic ".encode_base64($username.":".$password), "Content-Type" => 'application/json'};
